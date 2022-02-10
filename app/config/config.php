@@ -4,4 +4,4 @@
   // URL Root
   define('URLROOT', 'http://localhost/MVC');
   // Site Name
-  define('SITENAME', '420-411-VA: PHP MVC Application');
+  define('SITENAME', 'Assign 1 VC thing');
