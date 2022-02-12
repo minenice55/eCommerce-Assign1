@@ -5,14 +5,13 @@
     <img src="https://miro.medium.com/max/720/1*p8SGPFKYcbRWKfdj50wNxQ.png" alt="Italian Trulli" width="170" height="70">
     <a class="nav-link" style="cursor: pointer;" onclick="location.href='Home'">Home</a>
     <a class="nav-link" style="cursor: pointer; color: hotpink;">Timeline</a>
-    <a class="nav-link" style="cursor: pointer;">About the project</a>  
-    <a class="nav-link" style="cursor: pointer">Contact us</a>
+    <a class="nav-link" style="cursor: pointer;" onclick="location.href='Aboutus'">About the project</a>  
+    <a class="nav-link" style="cursor: pointer" onclick="location.href='Contact'">Contact us</a>
   </div>
 </nav>
 
-    <br><br>
-
-    <table class="table">
+<br><br>
+<table class="table">
   <thead>
 
     <tr>
@@ -44,6 +43,4 @@
   </tbody>
 </table>
 
-
-
-    <?php require APPROOT . '/views/includes/footer.php'; ?>
+<?php require APPROOT . '/views/includes/footer.php'; ?>

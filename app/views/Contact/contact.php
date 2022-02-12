@@ -1,78 +1,34 @@
-<html>
+<?php require APPROOT . '/views/includes/header.php'; 
+?>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <img src="https://miro.medium.com/max/720/1*p8SGPFKYcbRWKfdj50wNxQ.png" width="170" height="70">
+    <a class="nav-link" style="cursor: pointer;" onclick="location.href='Home'">Home</a>
+    <a class="nav-link" style="cursor: pointer" onclick="location.href='Timeline'">Timeline</a>
+    <a class="nav-link" style="cursor: pointer" onclick="location.href='Aboutus'">About the project</a>
+    <a class="nav-link" style="cursor: pointer, color: hotpink;">Contact us</a>
+  </div>
+</nav>
 
-<head>
-    <title>Contact View</title>
-    <style>
-        /* Style inputs with type="text", select elements and textareas */
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            /* Full width */
-            padding: 12px;
-            /* Some padding */
-            border: 1px solid #ccc;
-            /* Gray border */
-            border-radius: 4px;
-            /* Rounded borders */
-            box-sizing: border-box;
-            /* Make sure that padding and width stays in place */
-            margin-top: 6px;
-            /* Add a top margin */
-            margin-bottom: 16px;
-            /* Bottom margin */
-            resize: vertical
-                /* Allow the user to vertically resize the textarea (not horizontally) */
-        }
+<br>
 
-        /* Style the submit button with a specific background color etc */
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+<div class="container">
+    <form action="#">
+        <input type="text" class="form-control" id="fname" name="firstname" placeholder="">
+        <label for="fname" class="form-label">Your Name</label>
 
-        /* When moving the mouse over the submit button, add a darker green color */
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+        <input type="email" class="form-control" id="mail" name="email" placeholder="">
+        <label for="mail" class="form-label">Your Email</label>
 
-        /* Add a background color and some padding around the form */
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-    </style>
-</head>
+        <input type="text" class="form-control" id="subj" name="subject" placeholder="">
+        <label for="subj" class="form-label">Subject</label>
 
-<body>
-    <div class="container">
-        <form action="#">
+        <textarea id="msg" class="form-control" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="msg" class="form-label">Your Message</label>
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="submit" class="btn btn-primary mb-3" value="Submit">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </form>
+</div>
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
-    </div>
-</body>
-
-</html>
+<?php require APPROOT . '/views/includes/footer.php'; ?>
