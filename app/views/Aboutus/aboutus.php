@@ -1,5 +1,5 @@
 <?php require APPROOT . '/views/includes/header.php'; 
-    // Devrin Aiden Tiongson, 
+    // Devrin Aiden Tiongson, Theodore Tsimiklis 
 ?>
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <div class="container-fluid">
